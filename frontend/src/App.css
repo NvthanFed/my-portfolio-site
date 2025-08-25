@@ -1,8 +1,28 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   text-align: center;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    
+    background-image: url('./assets/green-gradient.png.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .logo {
@@ -39,4 +59,177 @@
 
 .read-the-docs {
   color: #888;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: white;
+  min-height: 100vh;
+}
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    
+    background-image: url('./assets/green-gradient.png.jpg');
+    background-size: 100% 100%;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.section {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-section h1,
+.hero-section p {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section h1 {
+  font-size: 6.5rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.typing-text {
+  font-size: 2.2rem;      /* Extra large description */
+  opacity: 0.8;
+  min-height: 4rem;
+  line-height: 1.4;
+  max-width: 1000px;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+  color: #00ff88;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1 }
+  51%, 100% { opacity: 0 }
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.section {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.section p {
+  font-size: 1.1rem;
+  opacity: 0.8;
+  max-width: 600px;
+}
+
+
+/* Neon Glow Effect */
+.neon-text {
+  font-size: 6.5rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  color: #fff;
+  text-shadow: 
+    0 0 5px #00ff88,
+    0 0 10px #00ff88,
+    0 0 15px #00ff88,
+    0 0 20px #00ff88,
+    0 0 35px #00ff88,
+    0 0 40px #00ff88;
+  animation: neonFlicker 3s infinite alternate;
+  position: relative;
+  z-index: 2;
+}
+
+.neon-subtitle {
+  font-size: 1.2rem;
+  color: #fff;
+  text-shadow: 
+    0 0 3px #00ff88,
+    0 0 6px #00ff88,
+    0 0 9px #00ff88;
+  animation: neonFlicker 3s infinite alternate 0.5s;
+  position: relative;
+  z-index: 2;
+  opacity: 0.9;
+}
+
+@keyframes neonFlicker {
+  0%, 100% {
+    text-shadow: 
+      0 0 5px #00ff88,
+      0 0 10px #00ff88,
+      0 0 15px #00ff88,
+      0 0 20px #00ff88,
+      0 0 35px #00ff88,
+      0 0 40px #00ff88;
+  }
+  50% {
+    text-shadow: 
+      0 0 2px #00ff88,
+      0 0 5px #00ff88,
+      0 0 8px #00ff88,
+      0 0 12px #00ff88,
+      0 0 18px #00ff88,
+      0 0 25px #00ff88;
+  }
+}
+
+.fade-in-text {
+  font-size: 6.5rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  color: white;
+  position: relative;
+  z-index: 2;
+  opacity: 0.9;
 }
